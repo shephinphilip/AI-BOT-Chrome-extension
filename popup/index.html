@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI-BOT</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- Chatbox container -->
+  <div id="chatbot-container" class="chatbot-container hidden">
+    <section class="msger">
+      <header class="msger-header">
+        <div class="msger-header-title">
+          <i class="fas fa-comment-alt"></i> AI-Bot
+        </div>
+        <div class="msger-header-options">
+          <button class="refresh-button" id="refresh-button">
+            <img src="../images/refresh.jpg" alt="Refresh Icon">
+          </button>
+        </div>
+      </header>
+      
+
+      <main class="msger-chat">
+        <div class="msg left-msg">
+          <div
+            class="msg-img"
+            style="background-image: url(../images/icon128.png)"
+          ></div>
+
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">BOT</div>
+              <div class="msg-info-time"></div>
+            </div>
+
+            <div class="msg-text">
+              Hi, I am your AI ChatBot 😄
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <form class="msger-inputarea">
+        <input type="text" class="msger-input" placeholder="Enter your message...">
+        <button type="submit" class="msger-send-btn">Send</button>
+      </form>
+    </section>
+  </div>
+  
+  
+  <script src="./script.js"></script>
+
+</body>
+</html>
