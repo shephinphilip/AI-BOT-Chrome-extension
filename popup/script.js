@@ -24,7 +24,7 @@ const PERSON_IMG = "../images/icon1281.png";
 const BOT_NAME = "BOT";
 const PERSON_NAME = "You";
 
-const API_KEY = "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";
+const API_KEY = "  "; //REPLACE WITH YOU OPENAI API KEY
 const API_ENDPOINT = "https://api.openai.com/v1/engines/davinci-instruct-beta/completions";
 
 // Load chat history from localStorage
