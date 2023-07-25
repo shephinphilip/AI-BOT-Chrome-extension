@@ -1,3 +1,11 @@
+// Import the natural language toolkit library
+const nltk = require('nltk');
+
+// Import custom libraries for sentiment analysis, language detection, and named entity recognition
+const { sentimentScore } = require('./sentiment');
+const { detectLanguage } = require('./langdetect');
+const { detectEntities } = require('./ner');
+
 const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
@@ -44,6 +52,15 @@ async function sendMessage() {
 
   appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
   msgerInput.value = "";
+
+  const sentiment = sentimentScore(msgText);
+  console.log("Sentiment Score:", sentiment);
+
+  const language = detectLanguage(msgText);
+  console.log("Detected Language:", language);
+
+  const entities = detectEntities(msgText);
+  console.log("Detected Entities:", entities);
 
   await sendToOpenAI(msgText);
   msgerInput.focus();
