@@ -1,9 +1,6 @@
 # AI-BOT-Chrome-extension
 AI chatbot chrome Extension using  chatgpt.5 Turbo
 
-# AI Chatbot Chrome Extension
-
-
 The AI Chatbot Chrome Extension is a simple chatbot implementation that utilizes the OpenAI API to provide conversational responses. The chatbot is designed to be integrated into a Chrome browser as an extension, allowing users to interact with the chatbot directly from their browser.
 
 ## Features
@@ -45,5 +42,3 @@ Contributions are welcome! If you have any suggestions, bug reports, or feature 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-
